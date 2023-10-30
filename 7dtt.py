@@ -32,6 +32,25 @@ print("""\n
       |3 |        Large          |
       ----------------------------""")
 
+bill = 0
 
+order = input("\nMasukkan nomor pizza yang anda pesan : ")
+if order in ['1', '2', '3', '4', '5', '6', '7', '8']:
+    bill += 43636
+else:
+    print ("Format yang anda masukkan tidak sesuai!")
+    
+crust = input ("Masukkan nomor pilihan crust : ")
+if crust == '1' :
+    bill += 0
+elif crust == '2' :
+    bill += 11819
+elif crust == '3' :
+    bill += 9091
+elif crust == '4' :
+    bill += 13637
+else: 
+    print("Format yang anda masukkan tidak sesuai!")
+    
 
 
