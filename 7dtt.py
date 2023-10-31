@@ -51,6 +51,36 @@ elif crust == '4' :
     bill += 13637
 else: 
     print("Format yang anda masukkan tidak sesuai!")
-    
+     break
+    ukuran = input("Masukkan nomor pilihan ukuran pizza : ") #input pilihan ukuran
+    if ukuran == '1':
+        bill += 0
+        ekstra_cheese = input("apakah anda ingin Ekstra cheese? (y/n) : ")
+        if ekstra_cheese == 'y':
+            bill += 13636
+        else:
+            bill += 0
+    elif ukuran == '2':
+        bill += 57273
+        ekstra_cheese = input("apakah anda ingin Ekstra cheese? (y/n) : ")
+        if ekstra_cheese == 'y':
+            bill += 16364
+        else:
+            bill += 0
+    elif ukuran == '3':
+        bill += 89091
+        ekstra_cheese = input("apakah anda ingin Ekstra cheese? (y/n) : ")
+        if ekstra_cheese == 'y':
+            bill += 19091
+        else:
+            bill += 0
+    else:
+        print("Format yang anda masukkan tidak sesuai!")
+        break
+    lanjut = input("pesan yang lain? (y/n) : ")
+    if lanjut =='n':
+        break
+print(f"""\nTerima kasih telah menggunakan layanan Pizza Hut delivery
+total tagihan anda adalah : Rp{bill}""")
 
 
